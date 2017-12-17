@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yilmazakkan.haber_portali.MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_launcher_background"
+        android:padding="20dp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:layout_below="@id/logo"
+        android:orientation="horizontal"
+        android:paddingTop="100dp"
+        android:id="@+id/linearLayout">
+
+<TableRow>
+
+
+    <ImageView
+        android:paddingLeft="50dp"
+        android:id="@+id/sports"
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:layout_weight="1"
+        android:scaleType="fitStart"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/economy"
+        android:layout_width="30dp"
+        android:layout_height="98dp"
+        android:layout_weight="1"
+        app:srcCompat="@mipmap/ic_launcher" />
+</TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:paddingLeft="50dp"
+                android:id="@+id/life"
+                android:layout_width="98dp"
+                android:layout_height="98dp"
+                android:layout_weight="1"
+                android:scaleType="fitStart"
+                app:srcCompat="@mipmap/ic_launcher" />
+
+            <ImageView
+                android:id="@+id/technology"
+                android:layout_width="100dp"
+                android:layout_height="98dp"
+                android:layout_weight="1"
+                app:srcCompat="@mipmap/ic_launcher" />
+        </TableRow>
+
+    </TableLayout>
+
+
+</RelativeLayout>
